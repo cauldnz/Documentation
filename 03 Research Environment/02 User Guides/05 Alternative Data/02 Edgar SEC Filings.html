@@ -40,9 +40,9 @@ We can then make requests for <i>AAPL</i>'s historical  price data and report da
 
 <div class="section-example-container">
 	<pre class="all"># We request for 1000 days of data starting from today
-aapl_history = self.History(aapl.Symbol, timedelta(days=1000), Resolution.Daily)
+aapl_history = qb.History(aapl.Symbol, timedelta(days=1000), Resolution.Daily)
 
-report_history = self.History(SECReport8K, aapl_8K.Symbol, timedelta(days=1000))
+report_history = qb.History(SECReport8K, aapl_8K.Symbol, timedelta(days=1000))
 </pre>
 </div>
 
